@@ -1,5 +1,5 @@
-const Controller = require('./controllers/Controller')
+const WikipediaController = require('./controllers/WikipediaController')
 
 module.exports = (app) => {
-    app.get('/test/get', Controller.get);
+    app.post('/wikipedia/get-page-data', WikipediaController.getPageData);
 }
